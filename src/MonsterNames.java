@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 
-
 public class MonsterNames {
     String[] str = {"Gomba", "Ulkoo", "Grutong", "Gnomy", "Lorpun", "Crysher", "Fattiyas", "Bom-bomp",
     "Scolator", "Gargantua", "Skinnabishu", "Gritchuar", "Freeaklum", "Swampool", "Creikus", "Rubjong", "Whoalap",
@@ -22,11 +21,5 @@ public class MonsterNames {
         monsterList.remove(randomIndex);
         return currentMonsterName;
     }
-
-//    public void getHoleListOfNames() {
-//        monsterList.forEach(x -> System.out.println(x));
-//        System.out.println();
-//    }
-
 }
 
