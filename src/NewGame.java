@@ -15,15 +15,12 @@ public class NewGame {
         int round = 0;
 
         /**
-         * Till Mavve:
-         * För att klara spelet behöver du vara aktiv med att gå in shopen
-         * och köpa attack och defense-items, då monstren blir svårare och svårare.
-         * Vill du dö snabbt öka (SpecifikMonster)m1:s,m2:s och m3:s dmg-värden.
-         * Vill du döda monstren snabbt öka (Person)p1:s dmg.
-         * Jag satsar på VG och har implementerat kraven för VG.
+         * To survive the game, you need to actively visit the shop
+         * and buy attack and defense items, since the monsters get tougher and tougher.
+         * If you want to die quickly, increase the damage values of (SpecificMonster) m1, m2, and m3.
+         * If you want to kill the monsters quickly, increase (Person) p1's damage.
          */
-
-        //Initializing Classes
+        
         MonsterNames monsterNames = new MonsterNames();
         Shop shop = new Shop();
         ArrayList<SpecificMonster> monsterArray = new ArrayList<SpecificMonster>();
@@ -36,7 +33,6 @@ public class NewGame {
         Player p1 = new Player("", 500, 50, 1, 0, 60, 0,0,0);
         welcomeToTheGame();
         p1.setName(SCANNER.nextLine());
-        //End Initializing Classes
 
         do {
             SpecificMonster currentMonster = getEnemy(monsterArray, round);
@@ -66,7 +62,7 @@ public class NewGame {
                 default:
                     System.out.println("Invalid input, choose a number between 1-4");
                     showMenuAgain = true;
-            }// end of switch (choice)
+            }
 
             if (!showMenuAgain) {
                 if (nothingHappens) {
@@ -117,10 +113,9 @@ public class NewGame {
                         System.out.println(p1.getName() + ": " + p1.getCurrentHp() + " hp");
                         System.out.println(currentMonster.getName() + ": " + currentMonster.getCurrentHp() + " hp" +
                                 "\n------------------------------------------------");
-                    }//End while monster or player is alive
-                    round++; // Increase the value of fightrounds with monster
-                }//End if no fight
-            }//End show menu again
+                    }
+                }
+            }
         } while(goAdventure);
 
     }//End Main
@@ -190,4 +185,4 @@ public class NewGame {
         }
     }
 
-}//End new game class
+}
