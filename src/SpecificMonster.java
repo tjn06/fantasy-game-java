@@ -35,7 +35,6 @@ public class SpecificMonster extends Creature {
 
     }
 
-    //Getters setters
     public int getGiveExpWhenKilled() {
         return giveExpWhenKilled;
     }
