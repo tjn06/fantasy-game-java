@@ -132,8 +132,5 @@ public abstract class Creature {
     public void setTotalDmg(int totalDmg) {
         this.totalDmg = totalDmg;
     }
-
-
-
-
+    
 }
