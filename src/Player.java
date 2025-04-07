@@ -6,7 +6,6 @@ public class Player extends Creature {
     private int exp;
     private int maxExp;
 
-
     public Player(String name, int currentHp, int dmg, int level, int exp, int extraDmg, int gold, int strength, int toughness ) {
         super(name, currentHp ,dmg, extraDmg, gold, strength, toughness);
         this.level = level;
@@ -63,6 +62,5 @@ public class Player extends Creature {
                 "\n* Toughness: " + super.getToughness() +
                 "\n*********************";
     }
-
-
+    
 }
